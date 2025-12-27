@@ -1,0 +1,19 @@
+meta {
+  name: Token
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/token
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "grant_type": "client_credentials",
+    "client_id": "ABC",
+    "client_secret": "DEF"
+  }
+}

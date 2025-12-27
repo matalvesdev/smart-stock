@@ -1,0 +1,17 @@
+meta {
+  name: Start
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/start
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "reportPath": "/home/bruno/projects/comunidade-buildrun/aulas/smartstock/reports/stock.csv"
+  }
+}
